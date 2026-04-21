@@ -29,4 +29,16 @@ Portion of users that recommended the movie: 0.8322637106184364
 
 Sparsity of X: 0.9437629618431682
 
-- Then imput, 0 for unspecificed ratings in X for modeling. (SAMII: Don't know if this a question, also Idk if i did it in the code Code Lines Up to 39)
+- Then imput, 0 for unspecificed ratings in X for modeling. 
+SAMII: I did this Idk if this needs an answer
+
+# Step 4
+
+### Split the X and Y in train set (80%, X_train, Y_train) and test set (20%, X_test, Y_test), make sure your data split can be replicated.
+
+- What is the dimension of X_test now?
+
+The X_test shape is (686, 3705)
+
+# Step 5
+
