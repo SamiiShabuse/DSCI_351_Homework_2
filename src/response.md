@@ -17,3 +17,16 @@ Number of Ratings: 3428
 X shape: (3428, 3705)
 
 
+# Step 3
+
+### Let's perform further cleaning with Y. The known range from 1 to 5. For this model-based movie recommender, we would like to set a threshold, if the rating is higher than (>) the threshold, then we consider the movie can be recommended, otherwises (<=) not recommend. Suppose the threshold is 3, change the value in the Y based on the preference.
+
+- What is the portion of movie to be recommended in Y?
+
+Portion of users that recommended the movie: 0.8322637106184364
+
+- What is the sparsit of X?
+
+Sparsity of X: 0.9437629618431682
+
+- Then imput, 0 for unspecificed ratings in X for modeling. (SAMII: Don't know if this a question, also Idk if i did it in the code Code Lines Up to 39)
