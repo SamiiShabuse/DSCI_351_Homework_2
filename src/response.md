@@ -52,3 +52,10 @@ The bayes method that should be applied is the Multinomial Naives Bayes model. T
 - With selected Naive Bayes method, with hyper-parameter setting as alpha=1 and fit_prior=True, train with your train set (X_train, Y_train). 
 
 SAMII: I completed this it can be validated on the notebook.
+
+# Step 6a.
+
+### With your trained NB model, make prediction with your test set (.predict (X_test)). 
+
+- What is the percentage of instances in X_test are correctly classified, whenc compared to predictions of Y_test?
+
