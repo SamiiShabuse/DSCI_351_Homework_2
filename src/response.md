@@ -30,7 +30,8 @@ Portion of users that recommended the movie: 0.8322637106184364
 Sparsity of X: 0.9437629618431682
 
 - Then imput, 0 for unspecificed ratings in X for modeling. 
-SAMII: I did this Idk if this needs an answer
+
+SAMII: I think did this Idk if this needs an answer
 
 # Step 4
 
@@ -42,3 +43,10 @@ The X_test shape is (686, 3705)
 
 # Step 5
 
+### Let us train a Naive Bayes Model. Look into the doc from scikit-learn regarding BOTH MultinomialNB and BernoulliNB and observe our dataset. 
+
+- Which bayes method should be applied? Provide your explanation.
+
+The bayes method that should be applied is the Multinomial Naives Bayes model. This is because the feature matrix X contains nonnegative numerical values, which are ratings from 0 to 5 after imputing missing values as 0, instead of using binary values. The model Bernoulli is better used for binary features, while MultinomialNB is better for count-based or nonnegative data. There for this dataset Multinomial is better to be used.
+
+- With selected Naive Bayes method, with hyper-parameter setting as alpha=1 and fit_prior=True, train with your train set (X_train, Y_train).
