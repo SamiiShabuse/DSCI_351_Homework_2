@@ -40,6 +40,7 @@ SAMII: I think did this Idk if this needs an answer
 - What is the dimension of X_test now?
 
 The X_test shape is (686, 3705)
+A fixed random_state (42) is used to ensure the train-test split is reproducible.
 
 # Step 5
 
@@ -59,3 +60,4 @@ SAMII: I completed this it can be validated on the notebook.
 
 - What is the percentage of instances in X_test are correctly classified, whenc compared to predictions of Y_test?
 
+Using the trained MultinomialNB model, the percentage of correctly classified instances in X_test is 71.57%.
