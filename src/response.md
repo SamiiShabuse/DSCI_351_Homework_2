@@ -61,3 +61,18 @@ SAMII: I completed this it can be validated on the notebook.
 - What is the percentage of instances in X_test are correctly classified, whenc compared to predictions of Y_test?
 
 Using the trained MultinomialNB model, the percentage of correctly classified instances in X_test is 71.57%.
+
+# Step 6b.
+
+### Now check the .predict_proba(X_test) output with trained NB model, each row has two probabilities (probability of the instance belong to class 0, and probability of the instance belong to class 1), the sum of them should be equal to 1 in each row.
+
+- Examine and compare the output to the predictions.
+SAMII: did it in the code.
+
+- What is the threshold in the 2nd prob result applied for classification prediction?
+
+The default threshold in the 2nd prob results are 0.5 of the classification. This was then verified after manually testing the prediction against 0.5 which produced identical results.
+
+- If set the threshold as 0.6 to make the prediction, what is the percentage of instances in X-test are correctly classified now?
+
+When then threhsold was increased to 0.6, the percentage of correctly classified instances became 70.70%, which mean increasing the threshold makes the model more conserative in predicting class 1, which reduced overall accuracy.
