@@ -76,3 +76,19 @@ The default threshold in the 2nd prob results are 0.5 of the classification. Thi
 - If set the threshold as 0.6 to make the prediction, what is the percentage of instances in X-test are correctly classified now?
 
 When then threhsold was increased to 0.6, the percentage of correctly classified instances became 70.70%, which mean increasing the threshold makes the model more conserative in predicting class 1, which reduced overall accuracy.
+
+# Step 7
+
+### Now use the splitted data from step 4, first apply the TruncratedSVD on train data and test data. Then use GaussianNB to train the transformed train data and make predictions on the transformed test data. 
+
+- What is the percentage of instances in test data are correctly classified now?
+
+The percentage of instances in the test data that are now correctly classified are 84.40%. 
+
+- Provide discussion regarding the performance with trained NB models (including the whole procedure from raw data)
+
+The dataset was first transformed into a user–movie rating matrix, which was highly sparse (about 94% missing values). The task was converted into a binary classification problem based on whether a user would recommend the most-rated movie. A Multinomial Naïve Bayes model achieved an accuracy of approximately 71.57%, which slightly decreased to 70.70% when the classification threshold was increased from 0.5 to 0.6.
+
+To improve performance, TruncatedSVD was applied to reduce dimensionality and capture latent features. A Gaussian Naïve Bayes model trained on the transformed data achieved a significantly higher accuracy of approximately 84.40%. This improvement is due to reduced sparsity, better feature representation, and the suitability of GaussianNB for continuous-valued features.
+
+Overall, dimensionality reduction combined with an appropriate model significantly improves performance compared to using the original sparse data. This demonstrates the importance of feature transformation and model selection in recommender systems, especially when dealing with sparse, high-dimensional data.
